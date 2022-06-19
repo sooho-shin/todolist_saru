@@ -27,11 +27,15 @@ body{
 
         color: #000000;
     }
-    .bravo{
-        
-        width: 143px;
-        height: 30px;
-    }
 
 }
+.bravo{
+    width: 143px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+}
+
     

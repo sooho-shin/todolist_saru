@@ -35,7 +35,13 @@ body {
   text-align: center;
   color: #000000;
 }
-.app-icon .bravo {
+
+.bravo {
   width: 143px;
   height: 30px;
+  position: absolute;
+  left: 50%;
+  bottom: 80px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
