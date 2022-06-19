@@ -1,34 +1,37 @@
-$color : blue;
-
-.test{
-    font-size: 15px;
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    
+body{
+    background: #F3DA54;
+}
+.app-icon{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     display: flex;
-    /* x축 */
     justify-content: center;
-    /* y축 */
     align-items: center;
- 
-    .test2{
-        width: 50%;
-        height: 50%;
-        display: flex;
-        background-color: red;
-        color: $color;
-        /* x축 */
-        justify-content: center;
-        /* y축 */
-        align-items: center;
-  
-      } 
-  }
+    flex-direction: column;
+    
+    .img-edit{
+        width: 85px;
+    }
+    .todo{
+        
+        font-family: 'Pulp Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 107%;
+        /* identical to box height, or 86px */
 
+        text-align: center;
+
+        color: #000000;
+    }
+    .bravo{
+        
+        width: 143px;
+        height: 30px;
+    }
+
+}
     
