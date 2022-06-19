@@ -1,5 +1,51 @@
 body {
-  background: #F3DA54;
+  background: #f3da54;
+}
+
+.app-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app-icon .img-edit {
+  width: 85px;
+}
+
+.app-icon .todo {
+  font-family: 'Fascinate';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 107%;
+  /* identical to box height, or 86px */
+  text-align: center;
+  color: #000000;
+}
+
+.bravo {
+  width: 143px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  bottom: 80px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .circle-img {
@@ -24,6 +70,7 @@ body {
   font-weight: 1000;
   font-size: 72px;
   line-height: 89px;
+  font-family: 'Fascinate';
 }
 
 .task-item {
@@ -34,24 +81,28 @@ body {
   display: inline-block;
   background-color: black;
 }
+
 .task-item .taskitem {
   position: absolute;
   left: 13px;
-  color: #F3DA54;
+  color: #f3da54;
   font-style: normal;
   font-weight: 1000;
   font-size: 17px;
   line-height: 84px;
 }
+
 .task-item .ycircle-img {
   top: 20px;
   right: 20px;
   width: 40px;
   position: absolute;
 }
+
 .task-item .check-img {
   top: 36px;
   right: 31px;
   width: 18px;
   position: absolute;
 }
+/*# sourceMappingURL=style.css.map */
