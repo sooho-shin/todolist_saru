@@ -1,57 +1,56 @@
 body {
-  background: #F3DA54;
+  background: black;
 }
 
-.circle-img {
+.ycircle-img {
   width: 40px;
   position: absolute;
   top: 25px;
   right: 20px;
 }
 
-.crossline-img {
+.ex-img {
   width: 16px;
   position: absolute;
   top: 37px;
   right: 32px;
 }
 
-.todo {
-  margin-top: 63px;
+.add {
+  margin-top: 68px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-weight: 1000;
   font-size: 72px;
   line-height: 89px;
+  color: #F3DA54;
 }
 
-.task-item {
+.new-to-do {
   position: absolute;
-  top: 169px;
+  top: 50%;
   width: 99%;
-  height: 84px;
-  display: inline-block;
-  background-color: black;
+  height: 78px;
+  background-color: #F3DA54;
 }
-.task-item .taskitem {
+.new-to-do .newtodo {
   position: absolute;
   left: 13px;
-  color: #F3DA54;
+  color: black;
   font-style: normal;
   font-weight: 1000;
   font-size: 17px;
   line-height: 84px;
 }
-.task-item .ycircle-img {
-  top: 20px;
-  right: 20px;
-  width: 40px;
+
+.save {
   position: absolute;
-}
-.task-item .check-img {
-  top: 36px;
-  right: 31px;
-  width: 18px;
-  position: absolute;
+  bottom: 55px;
+  left: 10px;
+  line-height: 89px;
+  color: #F3DA54;
+  font-weight: 1000;
+  font-size: 72px;
+  line-height: 89px;
 }

@@ -1,0 +1,58 @@
+body{
+    background: black;
+}
+
+.ycircle-img{ 
+    width: 40px;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+.ex-img{
+    width: 16px;
+    position: absolute;
+    top: 37px;
+    right: 32px;
+}
+
+.add{
+    
+    margin-top:68px;
+    display: flex;
+    font-weight: 1000;
+    font-size: 72px;
+    line-height: 89px;
+    color: #F3DA54;
+
+}
+.new-to-do{
+
+    position: absolute;
+    top: 50%;
+    width: 99%;
+    height: 78px;
+    background-color: #F3DA54;
+    .newtodo{
+        position: absolute;
+        left: 13px;
+        color: black;
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 17px;
+        line-height: 84px;
+    }
+}
+
+.save{
+    position: absolute;
+    bottom: 55px;
+    left: 10px;
+    line-height: 89px;
+    color: #F3DA54;
+    font-weight: 1000;
+    font-size: 72px;
+    line-height: 89px;
+}
+
+

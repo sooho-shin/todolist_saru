@@ -1,41 +1,98 @@
 body{
     background: #F3DA54;
 }
-.app-icon{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+// .app-icon{
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
     
-    .img-edit{
-        width: 85px;
-    }
-    .todo{
+//     .img-edit{
+//         width: 85px;
+//     }
+//     .todo{
         
-        font-family: 'Pulp Display';
+//         font-family: 'Pulp Display';
+//         font-style: normal;
+//         font-weight: 700;
+//         font-size: 80px;
+//         line-height: 107%;
+//         /* identical to box height, or 86px */
+
+//         text-align: center;
+
+//         color: #000000;
+//     }
+
+// }
+// .bravo{
+//     width: 143px;
+//     height: 30px;
+//     position: absolute;
+//     left: 50%;
+//     bottom: 80px;
+//     transform: translateX(-50%);
+// }
+.circle-img{ 
+    width: 40px;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+.crossline-img{
+    width: 16px;
+    position: absolute;
+    top: 37px;
+    right: 32px;
+}
+
+.todo{
+    
+    margin-top:63px;
+    display: flex;
+    font-weight: 1000;
+    font-size: 72px;
+    line-height: 89px;
+
+}
+.task-item{
+
+    position: absolute;
+    top: 169px;
+    width: 99%;
+    height: 84px;
+    display: inline-block;
+    background-color: black;
+    .taskitem{
+        position: absolute;
+        left: 13px;
+        color: #F3DA54;
         font-style: normal;
-        font-weight: 700;
-        font-size: 80px;
-        line-height: 107%;
-        /* identical to box height, or 86px */
-
-        text-align: center;
-
-        color: #000000;
+        font-weight: 1000;
+        font-size: 17px;
+        line-height: 84px;
     }
 
+    .ycircle-img{
+        top:20px;
+        right: 20px;
+        width: 40px;
+        position: absolute;
+    }
+    .check-img{
+        top: 36px;
+        right: 31px;
+        width: 18px;
+        position: absolute;
+    }
 }
-.bravo{
-    width: 143px;
-    height: 30px;
-    position: absolute;
-    left: 50%;
-    bottom: 80px;
-    transform: translateX(-50%);
-}
+
+
+
 
     
