@@ -36,17 +36,10 @@ body {
   transform: translateX(-50%);
 }
 .circle-img {
-  width: 40px;
   position: absolute;
   top: 25px;
   right: 20px;
-}
-
-.crossline-img {
-  width: 16px;
-  position: absolute;
-  top: 37px;
-  right: 32px;
+  background-color: #f3da54;
 }
 
 .todo {
@@ -73,17 +66,5 @@ body {
     font-size: 17px;
     line-height: 84px;
   }
-
-  .ycircle-img {
-    top: 20px;
-    right: 20px;
-    width: 40px;
-    position: absolute;
-  }
-  .check-img {
-    top: 36px;
-    right: 31px;
-    width: 18px;
-    position: absolute;
-  }
+     
 }

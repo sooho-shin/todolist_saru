@@ -22,13 +22,11 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 .app-icon .img-edit {
   width: 85px;
 }
-
 .app-icon .todo {
-  font-family: 'Fascinate';
+  font-family: "Fascinate";
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
@@ -49,17 +47,10 @@ body {
 }
 
 .circle-img {
-  width: 40px;
   position: absolute;
   top: 25px;
   right: 20px;
-}
-
-.crossline-img {
-  width: 16px;
-  position: absolute;
-  top: 37px;
-  right: 32px;
+  background-color: #f3da54;
 }
 
 .todo {
@@ -70,7 +61,7 @@ body {
   font-weight: 1000;
   font-size: 72px;
   line-height: 89px;
-  font-family: 'Fascinate';
+  font-family: "Fascinate";
 }
 
 .task-item {
@@ -81,7 +72,6 @@ body {
   display: inline-block;
   background-color: black;
 }
-
 .task-item .taskitem {
   position: absolute;
   left: 13px;
@@ -91,18 +81,3 @@ body {
   font-size: 17px;
   line-height: 84px;
 }
-
-.task-item .ycircle-img {
-  top: 20px;
-  right: 20px;
-  width: 40px;
-  position: absolute;
-}
-
-.task-item .check-img {
-  top: 36px;
-  right: 31px;
-  width: 18px;
-  position: absolute;
-}
-/*# sourceMappingURL=style.css.map */
