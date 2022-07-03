@@ -50,7 +50,7 @@ body {
   font-size: 72px;
   line-height: 89px;
   font-family: 'Fascinate';
-} 
+}
 .task-item {
   position: absolute;
   top: 169px;
@@ -67,10 +67,69 @@ body {
     font-size: 17px;
     line-height: 84px;
   }
-  .check-btn{
+  .check-btn {
     position: absolute;
     top: 25px;
     right: 20px;
     background-color: black;
+  }
+}
+
+.add-wrapper {
+  background: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  display: none;
+
+  .close-btn {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    width: 40px;
+    background-color: black;
+  }
+
+  .add {
+    margin-top: 68px;
+    display: flex;
+    font-weight: 1000;
+    font-size: 72px;
+    line-height: 89px;
+    color: #f3da54;
+  }
+
+  .new-to-do {
+    position: absolute;
+    top: 50%;
+    width: 99%;
+    height: 78px;
+    background-color: #f3da54;
+
+    .newtodo {
+      position: absolute;
+      left: 13px;
+      color: black;
+      font-style: normal;
+      font-weight: 1000;
+      font-size: 17px;
+      line-height: 84px;
+    }
+  }
+
+  .save {
+    position: absolute;
+    bottom: 55px;
+    left: 10px;
+    line-height: 89px;
+    color: #f3da54;
+    font-weight: 1000;
+    font-size: 72px;
+    line-height: 89px;
+    font-family: 'Fascinate', cursive;
+    font-family: 'Jua', sans-serif;
   }
 }

@@ -11,27 +11,42 @@
       href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- <div class="app-icon" onclick="location.href='splash-screen.html'">
-        <img class="img-edit" src="./img/edit.svg">
-        <div class="todo">to-do</div>
-    </div> -->
-
-    <!-- sooho 이미지 합쳐서 button tag 안에 넣어라  -->
-    <button type="button" class="circle-btn">
-      <img class="circle-img" src="./img/circle.svg" alt="imgCircle" onclick = "location.href='./add.html'" >
-    </button>  
-      <h1 class="todo">
+    <button type="button" class="circle-btn" id="openAdd">
+      <img class="circle-img" src="./img/circle.svg" alt="imgCircle" />
+    </button>
+    <h1 class="todo">
       TO-DO
     </h1>
     <div class="task-item">
       <span class="taskitem">TASK ITEM</span>
-      <!-- sooho 이미지 합쳐서 button tag 안에 넣어라  -->
       <button type="button" class="check-btn">
         <img class="check-img" src="./img/check.svg" alt="imgCheck" />
       </button>
     </div>
+
+    <!-- add wrapper -->
+    <div class="add-wrapper" id="addModal">
+      <button type="button" class="close-btn" id="closeAdd">
+        <img src="./img/close.svg" alt="imgClose" width="40px" />
+      </button>
+      <div class="add">
+        ADD
+      </div>
+      <div class="new-to-do">
+        <div class="newtodo">A NEW TO-DO HERE</div>
+      </div>
+      <div class="save">
+        SAVE
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+      // id openAdd 클릭하면 addModal show
+      // id closeAdd 클릭하면 addModal hide
+    </script>
   </body>
 </html>

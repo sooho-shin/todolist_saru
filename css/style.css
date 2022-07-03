@@ -22,11 +22,13 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
 .app-icon .img-edit {
   width: 85px;
 }
+
 .app-icon .todo {
-  font-family: "Fascinate";
+  font-family: 'Fascinate';
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
@@ -62,7 +64,7 @@ body {
   font-weight: 1000;
   font-size: 72px;
   line-height: 89px;
-  font-family: "Fascinate";
+  font-family: 'Fascinate';
 }
 
 .task-item {
@@ -73,6 +75,7 @@ body {
   display: inline-block;
   background-color: black;
 }
+
 .task-item .taskitem {
   position: absolute;
   left: 13px;
@@ -82,9 +85,72 @@ body {
   font-size: 17px;
   line-height: 84px;
 }
+
 .task-item .check-btn {
   position: absolute;
   top: 25px;
   right: 20px;
   background-color: black;
 }
+
+.add-wrapper {
+  background: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  display: none;
+}
+
+.add-wrapper .close-btn {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  width: 40px;
+  background-color: black;
+}
+
+.add-wrapper .add {
+  margin-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 1000;
+  font-size: 72px;
+  line-height: 89px;
+  color: #f3da54;
+}
+
+.add-wrapper .new-to-do {
+  position: absolute;
+  top: 50%;
+  width: 99%;
+  height: 78px;
+  background-color: #f3da54;
+}
+
+.add-wrapper .new-to-do .newtodo {
+  position: absolute;
+  left: 13px;
+  color: black;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 17px;
+  line-height: 84px;
+}
+
+.add-wrapper .save {
+  position: absolute;
+  bottom: 55px;
+  left: 10px;
+  line-height: 89px;
+  color: #f3da54;
+  font-weight: 1000;
+  font-size: 72px;
+  line-height: 89px;
+  font-family: 'Fascinate', cursive;
+  font-family: 'Jua', sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
