@@ -30,15 +30,15 @@ body {
 .bravo {
   width: 143px;
   height: 30px;
-  position: absolute;
   left: 50%;
   bottom: 80px;
   transform: translateX(-50%);
 }
 .circle-btn {
   position: absolute;
-  top: 25px;
-  right: 20px;
+    top: 25px;
+    right: 20px;
+    width: 40px;
   background-color: #f3da54;
   border: #f3da54;
 }
@@ -52,26 +52,26 @@ body {
   font-family: 'Fascinate';
 }
 .task-item {
-  position: absolute;
-  top: 169px;
   width: 100%;
   height: 84px;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: black;
-  .taskitem {
-    position: absolute;
-    left: 13px;
+  margin-bottom: 10px;
+  
+  .task-title {
     color: #f3da54;
     font-style: normal;
     font-weight: 1000;
     font-size: 17px;
     line-height: 84px;
+    margin-left: 13px;
   }
   .check-btn {
-    position: absolute;
     top: 25px;
-    right: 20px;
     background-color: black;
+    margin-right: 20px;
   }
 }
 
