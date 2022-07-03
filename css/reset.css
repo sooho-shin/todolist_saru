@@ -235,6 +235,16 @@ textarea {
   /* 2 */
   margin: 0;
   /* 3 */
+  background-color: transparent;
+  border: none;
+}
+
+button:focus,
+input:focus,
+optgroup:focus,
+select:focus,
+textarea:focus {
+  outline: none;
 }
 
 /**

@@ -105,18 +105,31 @@ body {
   .new-to-do {
     position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 99%;
     height: 78px;
     background-color: #f3da54;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 
-    .newtodo {
-      position: absolute;
-      left: 13px;
+    input.newtodo {
+      &::placeholder {
+        color: black;
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 17px;
+        width: 100%;
+        padding: 0;
+      }
       color: black;
       font-style: normal;
       font-weight: 1000;
       font-size: 17px;
-      line-height: 84px;
+      width: 100%;
+      padding: 0;
     }
   }
 
