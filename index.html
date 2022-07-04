@@ -22,36 +22,21 @@
       TO-DO
     </h1>
 
-    <div class = "task-group">
-      
+    <div class = "task-group" id="taskGroup">
+      <!-- task item -->
       <div class="task-item">
         <span class="task-title">TASK ITEM</span>
         <button type="button" class="check-btn">
           <img class="check-btn" src="./img/check.svg" alt="imgCheck" />
         </button>
       </div>
-    
+      <!-- task item -->
       <div class="task-item">
         <span class="task-title">TASK ITEM</span>
         <button type="button" class="check-btn">
           <img class="check-btn" src="./img/check.svg" alt="imgCheck" />
         </button>
       </div>
-    
-      <div class="task-item">
-        <span class="task-title">TASK ITEM</span>
-        <button type="button" class="check-btn">
-          <img class="check-btn" src="./img/check.svg" alt="imgCheck" />
-        </button>
-      </div>
-    
-      <div class="task-item">
-        <span class="task-title">TASK ITEM</span>
-        <button type="button" class="check-btn">
-          <img class="check-btn" src="./img/check.svg" alt="imgCheck" />
-        </button>
-      </div>
-    </div>
     
     <!-- add wrapper -->
     <div class="add-wrapper" id="addModal">
@@ -61,22 +46,37 @@
       <div class="add">
         ADD
       </div>
-      <div class="new-to-do">
-        <!-- <div class="newtodo">A NEW TO-DO HERE</div> -->
-        <input type="text" class="newtodo" placeholder="A NEW TO-DO HERE" />
-      </div>
-      <button type="submit" class="save" onclick="">
-        SAVE
-      </button>
+
+      <form id="taskForm"> 
+        <div class="new-to-do">
+          <input type="text" class="newtodo" id="taskInput" placeholder="A NEW TO-DO HERE" />
+        </div>
+        <button type="submit" class="save" onclick="">
+          SAVE
+        </button>
+      </form>
+      
     </div>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script>
-      $('#openAdd').on('click', function () {
+      $('#taskForm').on('submit', function(e){
+        e.preventDefault();
+        const temp = ` <div class="task-item">
+          <span class="task-title">${$('#taskInput').val()}</span>
+          <button type="button" class="check-btn">
+            <img class="check-btn" src="./img/check.svg" alt="imgCheck" />
+          </button>
+        </div>`;
+        $('#taskGroup').append(temp);
+        $('#addModal').hide();
+        $('#taskInput').val('');
+      });
+      $('#openAdd').on('click', function(){
         $('#addModal').show()
-      })
-      $('#closeAdd').on('click', function () {
+      });
+      $('#closeAdd').on('click', function(){
         $('#addModal').hide()
-      })
+      });
     </script>
   </body>
 </html>
