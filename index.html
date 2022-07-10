@@ -54,36 +54,36 @@
         </button>
       </form>
     </div>
-      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-      <script>
-        $('#addToDo').on('submit', function(e){
-          e.preventDefault()
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+      $('#addToDo').on('submit', function(e){
+        e.preventDefault()
 
-          const temp = `<div class="task-item">
-            <span class="task-title">${('#newto').val()}</span>
-            <button type="button" class="check-btn">
-            <img class="check-btn" src="./img/check.svg" alt="imgCheck" />
-            </button>
-            </div>`;
- 
-          $('#taskGroup').append(temp)
-          $('#addModal').hide()
-          $('#newto').val('')
-        })
+        const temp = `<div class="task-item">
+          <span class="task-title">${$('#newto').val()}</span>
+          <button type="button" class="check-btn">
+          <img class="check-btn" src="./img/check.svg" alt="imgCheck" />
+          </button>
+          </div>`;
+
+        $('#taskGroup').append(temp)
+        $('#addModal').hide()
+        $('#newto').val('')
+      })
 
 
-        
 
-        $('#openAdd').on('click', function() {
-          $('#addModal').show() 
-        })
 
-        $('#closeAdd').on('click', function () {
-          $('#addModal').hide()
-        })
+      $('#openAdd').on('click', function() {
+        $('#addModal').show() 
+      })
 
-        
-      </script> 
+      $('#closeAdd').on('click', function () {
+        $('#addModal').hide()
+      })
+
+
+    </script>
 
     
   </body>
