@@ -36,9 +36,9 @@ body {
 }
 .circle-btn {
   position: absolute;
-    top: 25px;
-    right: 20px;
-    width: 40px;
+  top: 25px;
+  right: 20px;
+  width: 40px;
   background-color: #f3da54;
   border: #f3da54;
 }
@@ -59,7 +59,7 @@ body {
   align-items: center;
   background-color: black;
   margin-bottom: 10px;
-  
+
   .task-title {
     color: #f3da54;
     font-style: normal;
@@ -68,10 +68,29 @@ body {
     line-height: 84px;
     margin-left: 13px;
   }
+  // 2020-07-10
+
   .check-btn {
-    top: 25px;
-    background-color: black;
+    background-image: url('../img/check.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
     margin-right: 20px;
+  }
+
+  &.complete {
+    background-color: #ff0000;
+    .task-title {
+      color: #fff;
+    }
+    .check-btn {
+      background-image: url('../img/check_w.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
 

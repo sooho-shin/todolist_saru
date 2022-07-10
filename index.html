@@ -25,18 +25,14 @@
     <div id="taskGroup">
       <div class="task-item">
         <span class="task-title">TASK ITEM</span>
-        <button type="button" class="check-btn">
-          <img class="check-btn" src="./img/check.svg" alt="imgCheck" />
-        </button>
+        <button type="button" class="check-btn"></button>
       </div>
       <div class="task-item">
         <span class="task-title">TASK ITEM</span>
-        <button type="button" class="check-btn">
-          <img class="check-btn" src="./img/check.svg" alt="imgCheck" />
-        </button>
+        <button type="button" class="check-btn"></button>
       </div>
     </div>
-    
+
     <!-- add wrapper -->
     <div class="add-wrapper" id="addModal">
       <button type="button" class="close-btn" id="closeAdd">
@@ -45,46 +41,54 @@
       <div class="add">
         ADD
       </div>
-      <form id = "addToDo">
+      <form id="addToDo">
         <div class="new-to-do">
-          <input type="text" class="newtodo" id="newto" placeholder="A NEW TO-DO HERE" />
+          <input
+            type="text"
+            class="newtodo"
+            id="newto"
+            placeholder="A NEW TO-DO HERE"
+          />
         </div>
         <button type="submit" class="save">
           SAVE
         </button>
       </form>
     </div>
+
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
     <script>
-      $('#addToDo').on('submit', function(e){
+      $('#addToDo').on('submit', function (e) {
         e.preventDefault()
 
         const temp = `<div class="task-item">
           <span class="task-title">${$('#newto').val()}</span>
           <button type="button" class="check-btn">
-          <img class="check-btn" src="./img/check.svg" alt="imgCheck" />
           </button>
-          </div>`;
+          </div>`
 
-        $('#taskGroup').append(temp) 
+        $('#taskGroup').append(temp)
         $('#addModal').hide()
         $('#newto').val('')
       })
 
-
-
-
-      $('#openAdd').on('click', function() {
-        $('#addModal').show() 
+      $('#openAdd').on('click', function () {
+        $('#addModal').show()
       })
 
       $('#closeAdd').on('click', function () {
         $('#addModal').hide()
       })
 
-
+      // 2020-07-10
+      // check-btn 버튼에 클릭 이벤트
+      // 버튼 부모 task-item에 complete class가 있으면 complete class remove
+      // 버튼 부모 task-item에 complete class가 없으면 complete class add
+      // jQuery this 개념 이해 필요
+      // https://wonjuman.tistory.com/20
+      //jqury parent -> 부모 객체 선택하는 법
+      // https://www.codingfactory.net/10338
     </script>
-
-    
   </body>
 </html>
