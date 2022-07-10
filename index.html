@@ -25,11 +25,11 @@
     <div id="taskGroup">
       <div class="task-item">
         <span class="task-title">TASK ITEM</span>
-        <button type="button" class="check-btn"></button>
+        <button type="button" class="check-btn" ></button>
       </div>
       <div class="task-item">
         <span class="task-title">TASK ITEM</span>
-        <button type="button" class="check-btn"></button>
+        <button type="button" class="check-btn" ></button>
       </div>
     </div>
 
@@ -80,6 +80,20 @@
       $('#closeAdd').on('click', function () {
         $('#addModal').hide()
       })
+
+      $('.check-btn').on('click', function() {
+        
+        if ($(this).parent().hasClass("complete")){
+          $(this).parent().removeClass('complete');
+        }
+        else{
+          $(this).parent().addClass('complete');
+        }
+      })
+
+     
+
+
 
       // 2020-07-10
       // check-btn 버튼에 클릭 이벤트
